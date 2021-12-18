@@ -1,37 +1,40 @@
 <html lang="en" dir="ltr"
 
 <head>
-  <meta charset="utf-8"
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<style>
-<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-</style>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
 </head>
 
-<body>
- <header>
+<body id="about-page">
+<header>
   <div id="logo">
-      <img src="https://via.placeholder.com/150x50?text=my-cool-logo" alt="Your Name" >
+    <picture>
+      <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)">
+      <img src="./img/logo.png" alt"My Image" alt="Your Name">
+    </picture>
   </div>
-      <nav>
-  <ul>
-    <li><a href="index.html">Work</a></li>
-    <li><a href="about.html" target"_blank">About</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-      </nav>
-  </div>
- </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Work</a></li>
+      <li><a href="about.html" target"_blank">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
 <main>
 <div id="hero">
+  <div class="container">
   <div>
     <h1>About Me</h1>
   </div>
+</div>
 
   <div>
       <picture>
@@ -41,6 +44,7 @@
   </div>
 </div>
 
+ <div class="container">
       <div id="work">
           <h2>My Story</h2>
          <p1> information about me </p1>
@@ -48,37 +52,44 @@
         <div>
          <a href="files/cv.pdf" target="_blank">Download my CV</a>
         </div>
-    <div class="row">
-        <h2>Skills & Tools</h2>
-        <div>
-          <div>
-          <h3>Relevant Skills</h3>
-          <ul>
-            <li>Inquisitve</li>
-            <li>Creative</li>
-            <li>Determined</li>
-            <li>Passionate</li>
-            <li>Hard-working</li>
-            <li>Flexible</li>
-            <li>Effecient communicator</li>
-            <li>Attentive to detail</li>
-          </ul>
-          </div>
-
-          <div>
-          <h3>Tools I Use</h3>
-          <ul>
-            <li>Adobe XD</li>
-            <li>Adobe Photoshop</li>
-            <li>Adobe illustrator</li>
-            <li>Adobe InDesign</li>
-            <li>Figma</li>
-            <li>Atom</li>
-          </ul>
-          </div>
-       </div>
-      </div>
   </div>
+
+ <div class="row">
+ <div class="container">
+  <h2>Skills & Tools</h2>
+   <div class="col-md-6">
+    <div>
+     <h3>Relevant Skills</h3>
+      <ul>
+       <li>Inquisitve</li>
+       <li>Creative</li>
+       <li>Determined</li>
+       <li>Passionate</li>
+       <li>Hard-working</li>
+       <li>Flexible</li>
+       <li>Effecient communicator</li>
+       <li>Attentive to detail</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div>
+      <h3>Tools I Use</h3>
+       <ul>
+        <li>Adobe XD</li>
+        <li>Adobe Photoshop</li>
+        <li>Adobe illustrator</li>
+        <li>Adobe InDesign</li>
+        <li>Figma</li>
+        <li>Atom</li>
+       </ul>
+    </div>
+   </div>
+ </div>
+
+</div>
+
 </main>
 
 <footer id="contact">
