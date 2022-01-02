@@ -4,15 +4,14 @@
 
 header {
   background-color: #ffe4c4;
-  text-align: center;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.5);
   position: fixed;
   width: 100%;
 }
 
 main {
-  padding-top: 163.94px;
+  padding-top: 120px;
 }
 
 body {
@@ -27,6 +26,7 @@ color: #4a4a4a;
 h1, h2, h3, h4, h5, h6 {
 line-height: 1.4;
 }
+
 h1 {
 font-size: 2.75em;
 font-weight: 700;
@@ -111,7 +111,12 @@ a:active { /* selected link */
 
 .logo {
   text-align: center;
-  max-width: 250px;
+  max-width: 150px;
+}
+
+.headshot {
+  text-align: center;
+  max-width: 300px;
 }
 
 .row {
@@ -147,16 +152,46 @@ a:active { /* selected link */
 nav > ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav > ul > li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav > ul > li > a {
   padding: 0 15px;
   font-weight: 700;
   color: #4a4a4a;
+}
+
+.navtoggle li:not(:last-child) {
+display: none;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  padding-right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 #hero {
@@ -185,37 +220,6 @@ max-width: 100%;
 height: auto;
 }
 
-@keyframes color-change {
-  from {fill: #edc655;}
-  to {fill: #f76414;}
-}
-
-.sun {
-  animation-duration: 4s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-@keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
-}
-
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
-}
-
-@keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
-}
-
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
-}
-
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -231,9 +235,25 @@ Medium devices (640px and larger)
       margin-top: 4px;
     }
 
+    nav > ul {
+      margin: 1em 0;
+    }
+
     main {
       padding-top: 20px;
     }
+
+    nav > ul > li {
+      display: inline-block;
+    }
+
+    .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+.navtoggle li:last-child {
+  display: none;
+}
 
 #hero span {
   display: block;
@@ -248,14 +268,15 @@ Medium devices (640px and larger)
   float: left;
 }
 
+.logo {
+  text-align: center;
+  min-width: 641px;
+}
+
 .row::after {
   content: "";
   clear: both;
   display: table;
-}
-
-#about-page h3 {
-  margin-top: 0;
 }
 
 body {
@@ -318,8 +339,20 @@ Large devices (1024px or larger)
       margin-top: 4px;
     }
 
+    nav > ul {
+  margin: 1em 0;
+}
+
+    .navtoggle li:last-child {
+      display: none;
+    }
+
+    .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
     main {
-      padding-top: 243px;
+      padding-top: 184px;
     }
 
   .col-md-7 {
@@ -334,6 +367,11 @@ Large devices (1024px or larger)
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .logo {
+    text-align: center;
+    min-width: 641px;
   }
 
   body {

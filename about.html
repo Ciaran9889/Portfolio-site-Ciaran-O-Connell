@@ -9,13 +9,16 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
     rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c89f8c4219.js" crossorigin="anonymous"></script>
 </head>
 
-<body id="about-page">
+<body>
 <header>
+<div class="container">
+<div class="navtoggle" id="myNavtoggle">
   <div id="logo">
     <div class="logo">
-    <picture>
+    <picture id="logo">
       <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)">
       <img src="./img/logo.png" alt"My Image" alt="Your Name">
     </picture>
@@ -26,8 +29,11 @@
       <li><a href="index.html">Work</a></li>
       <li><a href="about.html" target"_blank">About</a></li>
       <li><a href="#contact">Contact</a></li>
+      <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
     </ul>
   </nav>
+</div>
+</div>
 </header>
 
 <main>
@@ -38,9 +44,9 @@
   </div>
 </div>
 
-  <div>
+  <div class="headshot"
       <picture>
-        <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)">
+        <source srcset="http://via.placeholder.com/600x400" media="(max-width:250px)">
         <img src="./img/headshot.jpg" alt"My Image">
       </picture>
   </div>
@@ -121,5 +127,6 @@
 </div>
 
 </footer>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <script src="js/scripts.js"></script>
 </body>
