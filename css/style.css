@@ -15,50 +15,59 @@ main {
 }
 
 body {
-background-color: #ffffff;
-font-family: 'Lato', sans-serif;
-font-size: 16px; /* Sets the font size to 16px */
-font-weight: 300; /* Sets the font weight to 300 */
-line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-color: #4a4a4a;
+  background-color: #ffffff;
+  font-family: "Lato", sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #4a4a4a;
 }
 
-h1, h2, h3, h4, h5, h6 {
-line-height: 1.4;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.4;
 }
 
 h1 {
-font-size: 2.75em;
-font-weight: 700;
+  font-size: 2.75em;
+  font-weight: 700;
 }
 
 h2 {
-font-size: 2.25em;
-font-weight: 700;
-text-align: center;
+  font-size: 2.25em;
+  font-weight: 700;
+  text-align: center;
 }
 
 h3 {
-font-size: 1.35em;
-font-weight: 400;
+  font-size: 1.35em;
+  font-weight: 400;
 }
 h4 {
-font-size: 1.35em;
-font-weight: 400;
+  font-size: 1.35em;
+  font-weight: 400;
 }
 
 h5 {
-font-size: 1.35em;
-font-weight: 400;
+  font-size: 1.35em;
+  font-weight: 400;
 }
 
 h6 {
-font-size: 1.35em;
-font-weight: 400;
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+p {
+  text-align: center;
 }
 
 img {
-width: 100%;
+  width: 100%;
 }
 
 a {
@@ -70,10 +79,12 @@ a:focus {
   color: #cc6540;
   text-decoration: underline;
 }
-a:visited { /* visited link */
+a:visited {
+  /* visited link */
   color: #000000;
 }
-a:active { /* selected link */
+a:active {
+  /* selected link */
   color: #994c30;
 }
 
@@ -110,7 +121,10 @@ a:active { /* selected link */
 }
 
 .logo {
-  text-align: center;
+  text-align: left;
+}
+
+.logo img {
   max-width: 150px;
 }
 
@@ -125,7 +139,10 @@ a:active { /* selected link */
   padding: 0 15px;
 }
 
-#work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+}
 
 #work h1 {
   text-align: center;
@@ -164,7 +181,7 @@ nav > ul > li > a {
 }
 
 .navtoggle li:not(:last-child) {
-display: none;
+  display: none;
 }
 
 .navtoggle li .icon {
@@ -175,24 +192,25 @@ display: none;
   font-size: 20px;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
 }
 
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
@@ -218,8 +236,8 @@ display: none;
 
 #about-project {
   width: 100%;
-max-width: 100%;
-height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 /* ==============================
@@ -227,135 +245,141 @@ Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
   header {
-      text-align: unset;
-      padding: 20px 0 13px;
-    }
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
 
-    nav {
-      width: auto;
-      float: right;
-      margin-top: 4px;
-    }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
 
-    nav > ul {
-      margin: 1em 0;
-    }
+  nav > ul {
+    margin: 1em 0;
+  }
 
-    main {
-      padding-top: 20px;
-    }
+  main {
+    padding-top: 220px;
+  }
 
-    nav > ul > li {
-      display: inline-block;
-    }
+  nav > ul > li {
+    display: inline-block;
+  }
 
-    .navtoggle li:not(:last-child) {
-  display: inline-block;
-}
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
 
-.navtoggle li:last-child {
-  display: none;
-}
+  .navtoggle li:last-child {
+    display: none;
+  }
 
-#hero span {
-  display: block;
-}
+  #hero span {
+    display: block;
+  }
 
-.col-md-6 {
-  width: 50%;
-}
+  .col-md-6 {
+    width: 50%;
+  }
 
-[class*="col-"] {
-  padding: 0px 10px 0px 10px;
-  float: left;
-}
+  [class*="col-"] {
+    padding: 0px 10px 0px 10px;
+    float: left;
+  }
 
-.logo {
-  text-align: center;
-  min-width: 641px;
-}
+  .logo {
+    min-width: 641px;
+  }
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+  .logo img {
+    max-width: 250px;
+  }
 
-body {
-background-color: #ffffff;
-font-family: 'Lato', sans-serif;
-font-size: 20px; /* Sets the font size to 16px */
-font-weight: 300; /* Sets the font weight to 300 */
-line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-color: #4a4a4a;
-}
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
-h1, h2, h3, h4, h5, h6 {
-line-height: 1.4;
-}
-h1 {
-font-size: 2.75em;
-font-weight: 700;
-}
+  body {
+    background-color: #ffffff;
+    font-family: "Lato", sans-serif;
+    font-size: 20px; /* Sets the font size to 16px */
+    font-weight: 300; /* Sets the font weight to 300 */
+    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+    color: #4a4a4a;
+  }
 
-h2 {
-font-size: 2.25em;
-font-weight: 700;
-text-align: center;
-}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: 1.4;
+  }
+  h1 {
+    font-size: 2.75em;
+    font-weight: 700;
+  }
 
-h3 {
-font-size: 1.35em;
-font-weight: 400;
-}
-h4 {
-font-size: 1.35em;
-font-weight: 400;
-}
+  h2 {
+    font-size: 2.25em;
+    font-weight: 700;
+    text-align: center;
+  }
 
-h5 {
-font-size: 1.35em;
-font-weight: 400;
-}
+  h3 {
+    font-size: 1.35em;
+    font-weight: 400;
+  }
+  h4 {
+    font-size: 1.35em;
+    font-weight: 400;
+  }
 
-h6 {
-font-size: 1.35em;
-font-weight: 400;
-}
+  h5 {
+    font-size: 1.35em;
+    font-weight: 400;
+  }
 
+  h6 {
+    font-size: 1.35em;
+    font-weight: 400;
+  }
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-
   header {
-      text-align: unset;
-      padding: 20px 0 13px;
-    }
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
 
-    nav {
-      width: auto;
-      float: right;
-      margin-top: 4px;
-    }
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
 
-    nav > ul {
-  margin: 1em 0;
-}
+  nav > ul {
+    margin: 1em 0;
+  }
 
-    .navtoggle li:last-child {
-      display: none;
-    }
+  .navtoggle li:last-child {
+    display: none;
+  }
 
-    .navtoggle li:not(:last-child) {
-  display: inline-block;
-}
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
 
-    main {
-      padding-top: 184px;
-    }
+  main {
+    padding-top: 230px;
+  }
 
   .col-md-7 {
     width: 60%;
@@ -372,50 +396,57 @@ Large devices (1024px or larger)
   }
 
   .logo {
-    text-align: center;
     min-width: 641px;
   }
 
-  body {
-  background-color: #ffffff;
-  font-family: 'Lato', sans-serif;
-  font-size: 20px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: #4a4a4a;
+  .logo img {
+    max-width: 250px;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-  line-height: 1.4;
+  body {
+    background-color: #ffffff;
+    font-family: "Lato", sans-serif;
+    font-size: 20px; /* Sets the font size to 16px */
+    font-weight: 300; /* Sets the font weight to 300 */
+    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+    color: #4a4a4a;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: 1.4;
   }
   h1 {
-  font-size: 2.75em;
-  font-weight: 700;
+    font-size: 2.75em;
+    font-weight: 700;
   }
 
   h2 {
-  font-size: 2.25em;
-  font-weight: 700;
-  text-align: center;
+    font-size: 2.25em;
+    font-weight: 700;
+    text-align: center;
   }
 
   h3 {
-  font-size: 1.35em;
-  font-weight: 400;
+    font-size: 1.35em;
+    font-weight: 400;
   }
   h4 {
-  font-size: 1.35em;
-  font-weight: 400;
+    font-size: 1.35em;
+    font-weight: 400;
   }
 
   h5 {
-  font-size: 1.35em;
-  font-weight: 400;
+    font-size: 1.35em;
+    font-weight: 400;
   }
 
   h6 {
-  font-size: 1.35em;
-  font-weight: 400;
+    font-size: 1.35em;
+    font-weight: 400;
   }
-
 }
