@@ -3,7 +3,7 @@
 }
 
 header {
-  background-color: #ffe4c4;
+  background-color: #659388;
   padding: 10px 0 4px;
   box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.5);
   position: fixed;
@@ -15,12 +15,12 @@ main {
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #F1ECE8;
   font-family: "Lato", sans-serif;
   font-size: 16px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: #4a4a4a;
+  color: #232323;
 }
 
 h1,
@@ -71,12 +71,12 @@ img {
 }
 
 a {
-  color: #ff7f50;
+  color: #3A544D;
   text-decoration: none; /* No underlining */
 }
 a:hover,
 a:focus {
-  color: #cc6540;
+  color: #3A544D;
   text-decoration: underline;
 }
 a:visited {
@@ -90,13 +90,13 @@ a:active {
 
 .button {
   display: inline-block;
-  background-color: #ff7f50;
+  background-color: #659388;
   color: white;
   font-weight: 400;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #994c30;
+  border-bottom: 2px solid #588076;
   transition: 0.2s opacity;
 }
 .button:hover {
@@ -105,14 +105,14 @@ a:active {
 
 .button.contact {
   background-color: transparent;
-  color: #ff7f50;
+  color: #659388;
   text-transform: uppercase;
-  border: 2px solid #ff7f50;
+  border: 2px solid #588076;
 }
 
 .button.contact:hover {
-  background-color: #ff7f50;
-  color: #ffffff;
+  background-color: #BCC2B4;
+  color: #3A544D;
 }
 
 /* Layout styling */
@@ -207,7 +207,7 @@ nav > ul > li > a {
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
-  border-top: 1px solid rgba(255, 127, 80, 0.5);
+  border-top: 1px solid rgba(255, 252, 252, 100);
 }
 
 .navtoggle.responsive li:last-child {
@@ -215,7 +215,7 @@ nav > ul > li > a {
 }
 
 #hero {
-  background-color: #ffe4c4;
+  background-color: #D9E0D0;
   padding: 20px 0;
   display: inline-block;
   text-align: center;
@@ -238,6 +238,13 @@ nav > ul > li > a {
   width: 100%;
   max-width: 100%;
   height: auto;
+}
+
+#linkimages {
+  min-width: 100px;
+  max-width: 150px;
+  display: inline;
+  margin: 0 auto;
 }
 
 /* ==============================
