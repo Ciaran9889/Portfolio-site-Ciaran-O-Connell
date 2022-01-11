@@ -5,7 +5,7 @@
 header {
   background-color: #659388;
   padding: 10px 0 4px;
-  box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.5);
+  box-shadow: 0 5px 5px 0 rgba(50, 50, 50, 0.5);
   position: fixed;
   width: 100%;
 }
@@ -15,7 +15,7 @@ main {
 }
 
 body {
-  background-color: #F1ECE8;
+  background-color: #f1ece8;
   font-family: "Lato", sans-serif;
   font-size: 16px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
@@ -47,6 +47,7 @@ h3 {
   font-size: 1.35em;
   font-weight: 400;
 }
+
 h4 {
   font-size: 1.35em;
   font-weight: 400;
@@ -71,20 +72,21 @@ img {
 }
 
 a {
-  color: #3A544D;
+  color: #3a544d;
   text-decoration: none; /* No underlining */
 }
-a:hover,
+
 a:focus {
-  color: #3A544D;
+  color: #3a544d;
   text-decoration: underline;
 }
+
 a:visited {
   /* visited link */
-  color: #000000;
+  color: #000;
 }
+
 a:active {
-  /* selected link */
   color: #994c30;
 }
 
@@ -99,6 +101,7 @@ a:active {
   border-bottom: 2px solid #588076;
   transition: 0.2s opacity;
 }
+
 .button:hover {
   opacity: 0.8;
 }
@@ -111,8 +114,8 @@ a:active {
 }
 
 .button.contact:hover {
-  background-color: #BCC2B4;
-  color: #3A544D;
+  background-color: #bcc2b4;
+  color: #3a544d;
 }
 
 /* Layout styling */
@@ -204,6 +207,7 @@ nav > ul > li > a {
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
+
 .navtoggle.responsive li {
   display: block;
   padding: 10px 0;
@@ -215,7 +219,7 @@ nav > ul > li > a {
 }
 
 #hero {
-  background-color: #D9E0D0;
+  background-color: #d9e0d0;
   padding: 20px 0;
   display: inline-block;
   text-align: center;
@@ -291,7 +295,7 @@ Medium devices (640px and larger)
   }
 
   [class*="col-"] {
-    padding: 0px 10px 0px 10px;
+    padding: 0 10px;
     float: left;
   }
 
@@ -310,7 +314,7 @@ Medium devices (640px and larger)
   }
 
   body {
-    background-color: #ffffff;
+    background-color: #f1ece8;
     font-family: "Lato", sans-serif;
     font-size: 20px; /* Sets the font size to 16px */
     font-weight: 300; /* Sets the font weight to 300 */
@@ -326,6 +330,7 @@ Medium devices (640px and larger)
   h6 {
     line-height: 1.4;
   }
+
   h1 {
     font-size: 2.75em;
     font-weight: 700;
@@ -341,6 +346,7 @@ Medium devices (640px and larger)
     font-size: 1.35em;
     font-weight: 400;
   }
+
   h4 {
     font-size: 1.35em;
     font-weight: 400;
@@ -411,7 +417,7 @@ Large devices (1024px or larger)
   }
 
   body {
-    background-color: #ffffff;
+    background-color: #f1ece8;
     font-family: "Lato", sans-serif;
     font-size: 20px; /* Sets the font size to 16px */
     font-weight: 300; /* Sets the font weight to 300 */
@@ -427,6 +433,7 @@ Large devices (1024px or larger)
   h6 {
     line-height: 1.4;
   }
+
   h1 {
     font-size: 2.75em;
     font-weight: 700;
@@ -442,6 +449,7 @@ Large devices (1024px or larger)
     font-size: 1.35em;
     font-weight: 400;
   }
+
   h4 {
     font-size: 1.35em;
     font-weight: 400;
